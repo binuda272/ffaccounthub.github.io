@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Top Account #1</title>
+    <!-- Link to Google Fonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@700&display=swap">
+    <!-- Link to Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            color: white;
+            text-align: center;
+            scroll-behavior: smooth;
+            background-color: #f0f0f0; /* Fallback background color */
+        }
+
+        .content {
+            padding: 20px;
+            padding-top: 100px; /* Adjust as needed for space */
+        }
+
+        .account-details {
+            background-color: rgba(255, 255, 255, 0.7);
+            color: #333;
+            border-radius: 10px;
+            margin: 10px auto;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            max-width: 800px;
+            text-align: left; /* Adjust text alignment if necessary */
+        }
+
+        .account-details h1 {
+            margin-top: 0;
+            font-family: 'Roboto Condensed', sans-serif; /* Apply the fancy font */
+        }
+
+        .account-image {
+            max-width: 100%; /* Ensure image resizes with container */
+            height: auto; /* Maintain aspect ratio */
+            border-radius: 8px;
+            overflow: hidden; /* Hide overflow to ensure rounded corners */
+        }
+
+        .account-image img {
+            width: 100%; /* Make image fill its container */
+            height: auto; /* Maintain aspect ratio */
+            display: block; /* Remove any default inline spacing */
+            border-radius: 8px;
+            transition: transform 0.3s ease; /* Add smooth transition */
+        }
+
+        .account-image img:hover {
+            transform: scale(1.1); /* Scale image on hover for effect */
+        }
+
+        .price {
+            color: red;
+        }
+
+        .footer {
+            background-color: rgba(0, 0, 0, 0);
+            color: white;
+            padding: 20px;
+            text-align: center;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+            z-index: 1000;
+        }
+
+        .account-details ul {
+            list-style-type: disc; /* Set bullet style */
+            padding-left: 20px; /* Adjust indentation */
+        }
+
+        .account-details li {
+            font-weight: bold; /* Make list items bold */
+        }
+
+        .contact-text {
+            font-weight: bold;
+            color: red;
+        }
+
+        .popup {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black background */
+            z-index: 1001; /* Above the footer */
+            padding-top: 100px; /* Adjust vertical centering */
+        }
+
+        .popup-content {
+            background-color: white;
+            color: black;
+            border-radius: 10px;
+            width: 300px;
+            margin: auto;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .popup-close {
+            cursor: pointer;
+            position: absolute;
+            top: 10px; /* Increased top spacing for easier click */
+            right: 10px; /* Increased right spacing for easier click */
+            font-size: 24px; /* Larger font size */
+        }
+
+        .green-button {
+            background-color: green;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            border-radius: 5px;
+            margin-top: 20px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .green-button:hover {
+            background-color: darkgreen;
+        }
+
+        .whatsapp-button {
+            background-color: #25D366; /* WhatsApp green */
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            border-radius: 5px;
+            margin-bottom: 20px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .whatsapp-button:hover {
+            background-color: #128C7E; /* Darker shade of WhatsApp green */
+        }
+
+        .whatsapp-icon {
+            margin-right: 10px;
+        }
+
+        /* Style for success message */
+        .success {
+            color: green;
+        }
+
+        /* Style for marquee text */
+        marquee {
+            color: green;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="content">
+        <div class="account-details">
+            <!-- Marquee for Trusted Seller Warranty -->
+            <marquee behavior="scroll" direction="left">
+                <span><i class="fas fa-shield-alt"></i> Trusted Seller Lifetime Warranty </span>
+            </marquee>
+
+            <!-- Container for Account Image -->
+            <div class="account-image">
+                <img src="https://i.ibb.co/LRLh1g0/panelpic.jpg" alt="Panel 1 Image">
+            </div>
+            <h1>Panel #3</h1>
+            <p>Price: <span class="price">$30 (Rs.9130.00)</span></p>
+            <p><b>PC & Mobile </b></p>
+            <ul>
+               <li>🛟Lifetime Warranty</li>
+               <li>🐞No Bugs</li>
+               <li>🚫Never Banned (proof)</li>
+            </ul>
+            <p><span class="contact-text">Contact the Seller and do The Payment Before Get The Account<br>ගිණුම ලබා ගැනීමට පෙර විකුණුම්කරු සම්බන්ධ කර ගෙවීම් කරන්න</span></p>
+            
+            <!-- WhatsApp Button -->
+            <a href="https://wa.me/0773585511" target="_blank" class="whatsapp-button">
+                <i class="fab fa-whatsapp whatsapp-icon"></i> Contact Seller
+            </a>
+
+            <!-- Green Button with Popup -->
+            <a href="#" class="green-button" onclick="openPopup()">(★‿★)</a>
+        </div>
+    </div>
+    
+    <!-- Popup -->
+    <div id="popup" class="popup">
+        <div class="popup-content">
+            <span class="popup-close" onclick="closePopup()">&times;</span>
+            <h2>Enter Username and Key</h2>
+            <form onsubmit="return validateKey()">
+                <label for="username">Username:</label><br>
+                <input type="text" id="username" name="username" required><br><br>
+                <label for="key">Key :</label><br>
+                <input type="text" id="key" name="key" pattern="[0-9]{4}" title="Please enter the actual number" required><br><br>
+                <input type="submit" value="Submit">
+            </form>
+            <div id="successMessage" class="success" style="display: none;">
+                Success! You've got the account.<br><br>
+                ID: <span id="accountId">ID-xxxxxxxxxxx</span><br>
+                Password: <span id="accountPassword">Password-123456789</span><br><br>
+                <button onclick="copyToClipboard('accountId')">Copy ID</button>
+                <button onclick="copyToClipboard('accountPassword')">Copy Password</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function openPopup() {
+            document.getElementById("popup").style.display = "block";
+        }
+
+        function closePopup() {
+            document.getElementById("popup").style.display = "none";
+        }
+
+        function validateKey() {
+            var keyInput = document.getElementById("key").value;
+            if (keyInput === "6589") {
+                document.getElementById("successMessage").style.display = "block";
+                return false; // Prevent form submission
+            } else {
+                alert("Incorrect key. Please try again.");
+                return false; // Prevent form submission
+            }
+        }
+
+        function copyToClipboard(elementId) {
+            var copyText = document.getElementById(elementId);
+            var textArea = document.createElement("textarea");
+            textArea.value = copyText.textContent;
+            document.body.appendChild(textArea);
+            textArea.select();
+            document.execCommand("copy");
+            document.body.removeChild(textArea);
+            alert("Copied to clipboard: " + copyText.textContent);
+        }
+    </script>
+
+    <!-- Footer -->
+    <div class="footer">
+        &copy; 2024 FF Accounts. All rights reserved.
+    </div>
+
+    <!-- Font Awesome -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js"></script>
+
+</body>
+</html>

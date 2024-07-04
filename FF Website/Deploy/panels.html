@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Panels for Sale</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-image: url('pixelcut.jpeg'); /* Replace with your high-resolution image path */
+            background-size: cover; /* Cover ensures the entire container is covered */
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            color: white;
+            text-align: center; /* Center-align text */
+            scroll-behavior: smooth; /* Smooth scrolling behavior for the entire page */
+        }
+
+        .footer {
+            background-color: rgba(0, 0, 0, 0); /* Fully transparent */
+            color: white;
+            padding: 20px;
+            text-align: center;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+            z-index: 1000; /* Ensure footer is above other content */
+        }
+
+        .search-bar {
+            width: 60%;
+            margin: 100px auto 20px auto; /* Add margin to center */
+            padding: 10px;
+            font-size: 18px;
+            border: 2px solid #ccc;
+            border-radius: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            background-color: #fff; /* Background color of search bar */
+            color: #333; /* Text color of search bar */
+            outline: none; /* Remove default focus outline */
+        }
+
+        .search-bar::placeholder {
+            color: #999; /* Placeholder text color */
+        }
+
+        .card-container {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-top: 20px;
+            gap: 20px; /* Add gap between cards */
+        }
+
+        .card {
+            width: 300px;
+            background-color: rgba(255, 255, 255, 0.7); /* Semi-transparent white background */
+            color: #333;
+            border-radius: 10px;
+            margin: 10px;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: left; /* Align text to the left */
+            cursor: pointer; /* Add cursor pointer */
+            transition: transform 0.3s; /* Add transition for scaling */
+        }
+
+        .card:hover {
+            transform: scale(1.05); /* Scale up on hover */
+        }
+
+        .card h3 {
+            margin-top: 0;
+        }
+
+        .card p {
+            line-height: 1.6;
+        }
+
+        .card img {
+            width: 100%;
+            border-radius: 8px;
+            margin-bottom: 10px;
+        }
+
+        .price {
+            color: red; /* Red color for price */
+        }
+
+        .status {
+            font-weight: bold;
+            margin-top: 10px;
+        }
+
+        .panels-title {
+            color: yellow; /* Yellow color for the title */
+            font-size: 2em; /* Adjust font size if needed */
+            margin-bottom: 10px; /* Add space below the title */
+            animation: glow 1.5s infinite alternate; /* Glowing animation */
+        }
+
+        @keyframes glow {
+            from {
+                text-shadow: 0 0 10px yellow, 0 0 20px yellow, 0 0 30px yellow;
+            }
+            to {
+                text-shadow: 0 0 20px yellow, 0 0 30px yellow, 0 0 40px yellow;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Panels Title -->
+    <h2 id="panels-title" class="panels-title">Panels - Discover the Best Panels</h2>
+
+    <!-- Card Container -->
+    <div class="card-container" id="panelContainer">
+        <!-- Panel Card 1 -->
+        <div class="card" data-panel="Panel #1" data-link="panels/panel1.html">
+            <img src="https://i.ibb.co/LRLh1g0/panelpic.jpg" alt="Panel 1 Image">
+            <h3>Panel #1</h3>
+            <p class="status" style="color: rgb(192, 7, 7);">Price:$15</p>
+            <p class="status" style="color: rgb(37, 155, 56);">Status: Available</p>
+        </div>
+
+        <!-- Panel Card 2 -->
+        <div class="card" data-panel="Panel #2" data-link="panels/panel2.html">
+            <img src="https://i.ibb.co/LRLh1g0/panelpic.jpg" alt="Panel 2 Image">
+            <h3>Panel #2</h3>
+            <p class="status" style="color: rgb(192, 7, 7);">Price:$25</p>
+            <p class="status" style="color: rgb(37, 155, 56);">Status: Available</p>
+        </div>
+
+        <!-- Panel Card 3 -->
+        <div class="card" data-panel="Panel #3" data-link="panels/panel3.html">
+            <img src="https://i.ibb.co/LRLh1g0/panelpic.jpg" alt="Panel 3 Image">
+            <h3>Panel #3</h3>
+            <p class="status" style="color: rgb(192, 7, 7);">Price:$30</p>
+            <p class="status" style="color: rgb(37, 155, 56);">Status: Available</p>
+        </div>
+    </div>
+    
+    <!-- Footer -->
+    <div class="footer">
+        &copy; 2024 FF Accounts. Partial rights reserved.
+    </div>
+
+    <script>
+        document.querySelectorAll('.card').forEach(function(card) {
+            card.addEventListener('click', function() {
+                var link = card.getAttribute('data-link');
+                if (link) {
+                    window.location.href = link;
+                }
+            });
+        });
+    </script>
+
+</body>
+</html>

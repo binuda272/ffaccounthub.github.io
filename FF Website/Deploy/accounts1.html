@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Accounts for Sale</title>
+    <style>
+        body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+        background-image: url('pixelcut.jpeg'); /* Replace with your high-resolution image path */
+        background-size: cover; /* Cover ensures the entire container is covered */
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        color: white;
+        text-align: center; /* Center-align text */
+        scroll-behavior: smooth; /* Smooth scrolling behavior for the entire page */
+    }
+
+        .footer {
+            background-color: rgba(0, 0, 0, 0); /* Fully transparent */
+            color: white;
+            padding: 20px;
+            text-align: center;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+            z-index: 1000; /* Ensure footer is above other content */
+        }
+
+        .search-bar {
+            width: 60%;
+            margin: 100px auto 20px auto; /* Add margin to center */
+            padding: 10px;
+            font-size: 18px;
+            border: 2px solid #ccc;
+            border-radius: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            background-color: #fff; /* Background color of search bar */
+            color: #333; /* Text color of search bar */
+            outline: none; /* Remove default focus outline */
+        }
+
+        .search-bar::placeholder {
+            color: #999; /* Placeholder text color */
+        }
+
+        .categories {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+
+        .category {
+            background-color: #333;
+            color: white;
+            padding: 10px 20px;
+            margin: 0 10px;
+            border-radius: 20px;
+            cursor: pointer;
+            transition: background-color 0.3s ease, color 0.3s ease;
+            text-decoration: none; /* Remove underline */
+        }
+
+        .category:hover {
+            background-color: #ff7300;
+            color: black;
+        }
+
+        .card-container {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-top: 20px;
+            gap: 20px; /* Add gap between cards */
+        }
+
+        .card {
+            width: 300px;
+            background-color: rgba(255, 255, 255, 0.7); /* Semi-transparent white background */
+            color: #333;
+            border-radius: 10px;
+            margin: 10px;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: left; /* Align text to the left */
+            cursor: pointer; /* Add cursor pointer */
+            transition: transform 0.3s; /* Add transition for scaling */
+        }
+
+        .card:hover {
+            transform: scale(1.05); /* Scale up on hover */
+        }
+
+        .card h3 {
+            margin-top: 0;
+        }
+
+        .card p {
+            line-height: 1.6;
+        }
+
+        .card img {
+            max-width: 100%; /* Ensure images are responsive */
+            border-radius: 8px;
+            margin-bottom: 10px;
+        }
+
+        .price {
+            color: red; /* Red color for price */
+        }
+
+        .status {
+            font-weight: bold;
+            margin-top: 10px;
+        }
+
+        .top-cards-title {
+            color: yellow; /* Yellow color for the title */
+            font-size: 2em; /* Adjust font size if needed */
+            margin-bottom: 10px; /* Add space below the title */
+            animation: glow 1.5s infinite alternate; /* Glowing animation */
+        }
+
+        @keyframes glow {
+            from {
+                text-shadow: 0 0 10px yellow, 0 0 20px yellow, 0 0 30px yellow;
+            }
+            to {
+                text-shadow: 0 0 20px yellow, 0 0 30px yellow, 0 0 40px yellow;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Search Bar -->
+    <input type="text" class="search-bar" placeholder="Search Prices..." id="searchBar">
+    
+    <!-- Categories Section -->
+    <div class="categories">
+        <a href="#accounts" class="category">Exchange Accounts</a>
+        <a href="#accrecover" class="category">Account Recovery & Unlock</a>
+        <a href="panels.html" class="category">Panels</a>
+    </div>
+
+    <!-- Top Cards Title -->
+    <h2 id="top-cards" class="top-cards-title">Top Accounts - Discover the Best Accounts</h2>
+
+    <!-- Card Container -->
+    <div class="card-container" id="cardContainer">
+        <!-- Card 1 -->
+        <div class="card" data-account="Top #1" data-price="30000" data-link="Accounts\Top\top1.html">
+            <img src="https://i.ibb.co/GJsXCRH/accimage1.jpg" alt="Account 1 Image">
+            <h3>Top #1</h3>
+            <p>Price: <span class="price">Rs.30000.00</span></p>
+            <p> Lv.75
+                ❤️‍🔥4 EVO MAX
+                ❤️‍🔥ALL CRIMINALS HAVE
+                ❤️‍🔥OLD ELITE PASS AND 8 GRANDPRICE</p>
+            <p class="status" style="color: rgb(37, 155, 56);">Status: Working</p> <!-- Red color added inline -->
+        </div>
+
+        <!-- Card 2 -->
+        <div class="card" data-account="Top #2" data-price="20000" data-link="Accounts\Top\top2.html">
+            <img src="https://i.ibb.co/rMVKvVP/accimage2.jpg" alt="Account 2 Image">
+            <h3>Top #2</h3>
+            <p>Price: <span class="price">Rs.20000.00</span></p>
+            <p>🔥Highly Level Upped Lv.79</p>
+            <p class="status" style="color: rgb(37, 155, 56);">Status: Working</p> <!-- Red color added inline -->
+        </div>
+
+        <!-- Repeat similar structure for other cards -->
+        <!-- Card 3 -->
+        <div class="card" data-account="Top #3" data-price="7500" data-link="Accounts\Top\top3.html">
+            <img src="https://i.ibb.co/PQ1KS60/account3.jpg" alt="Account 3 Image">
+            <h3>Top #3</h3>
+            <p>Price: <span class="price">Rs.7500.00</span></p>
+            <p>Level 51
+            </p>
+            <p><li>Diamonds (Gems) - +500</li>
+                <li>🔥Gg Bing</li>
+                <li>🔥S-22 Id</li>
+                <li>🔥4 Evo Gun</li></p>
+            <p class="status" style="color: rgb(37, 155, 56);">Status: Working</p> <!-- Red color added inline -->
+            <p class="status" style="color: rgb(212, 86, 3);">Low Budget</p> <!-- Red color added inline -->
+        </div>
+
+        <!-- Card 4 -->
+        <div class="card" data-account="Top #4" data-price="9500" data-link="Accounts\Top\top4.html">
+            <img src="https://i.ibb.co/nk1ZksP/acc4.jpg" alt="Account 4 Image">
+            <h3>Top #4</h3>
+            <p>Price: <span class="price">Rs.9500.00</span></p>
+            <p>Level 71</p>
+            <p><li>❤️‍🔥5 EVO GUN HAVE 💎</li></p>
+            <p class="status" style="color: rgb(37, 155, 56);">Status: Working</p> <!-- Red color added inline -->
+        </div>
+
+        <!-- Card 5 -->
+        <div class="card" data-account="Top #5" data-price="2500" data-link="Accounts\Top\top5.html">
+            <img src="https://i.ibb.co/vqYdsJP/acc5.jpg" alt="Account 5 Image">
+            <h3>Top #5</h3>
+            <p>Price: <span class="price">Rs.2500</span></p>
+            <p><li>🔥LV 63</li></p>
+            <p><li>❤️‍🔥1 EVO GUN</li></p>
+            <p><li>🔥White Jersey</li></p>
+            <p class="status" style="color: rgb(37, 155, 56);">Status: Working</p> <!-- Red color added inline -->
+            <p class="status" style="color: rgb(212, 86, 3);">Low Budget</p> <!-- Red color added inline -->
+        </div>
+
+        <!-- Card 6 -->
+        <div class="card" data-account="Top #6" data-price="16000" data-link="Accounts\Top\top6.html">
+            <img src="https://i.ibb.co/ZxPmqt2/acc6.jpg" alt="Account 6 Image">
+            <h3>Top #6</h3>
+            <p>Price: <span class="price">Rs.16000.00</span></p>
+            <p>👌Level 75</p>
+            <p class="status" style="color: rgb(37, 155, 56);">Status: Working</p> <!-- Red color added inline -->
+        </div>
+
+        <!-- Card 7 -->
+        <div class="card" data-account="Top #7" data-price="7500" data-link="Accounts\Top\top7.html">
+            <img src="https://i.ibb.co/cJtqvQq/acc7.jpg" alt="Account 7 Image">
+            <h3>Top #7</h3>
+            <p>Price: <span class="price">Rs.7500.00</span></p>
+            <p>Level 62</p>
+            <p class="status" style="color: rgb(37, 155, 56);">Status: Working</p> <!-- Red color added inline -->
+            <p class="status" style="color: rgb(212, 86, 3);">Low Budget</p> <!-- Red color added inline -->
+        </div>
+
+        <!-- Card 8 -->
+        <div class="card" data-account="Top #8" data-price="5500" data-link="Accounts\Top\top8.html">
+            <img src="https://i.ibb.co/M8BPPmc/acc8.jpg" alt="Account 8 Image">
+            <h3>Top #8</h3>
+            <p>Price: <span class="price">Rs.5500.00</span></p>
+            <p>Level 66</p>
+            <p class="status" style="color: rgb(37, 155, 56);">Status: Working</p> <!-- Red color added inline -->
+            <p class="status" style="color: rgb(212, 86, 3);">Low Budget</p> <!-- Red color added inline -->
+        </div>
+
+        <!-- Card 9 -->
+        <div class="card" data-account="Top #9" data-price="3000" data-link="Accounts\Top\top9.html">
+            <img src="https://i.ibb.co/qkRvp7p/acc9.jpg" alt="Account 9 Image">
+            <h3>Top #9</h3>
+            <p>Price: <span class="price">Rs.3000.00</span></p>
+            <p>Level 45</p>
+            <p class="status" style="color: rgb(37, 155, 56);">Status: Working</p> <!-- Red color added inline -->
+            <p class="status" style="color: rgb(212, 86, 3);">Low Budget</p> <!-- Red color added inline -->
+        </div>
+
+        <!-- Card 10 -->
+        <div class="card" data-account="Top #10" data-price="2500" data-link="Accounts\Top\top10.html">
+            <img src="https://i.ibb.co/6yWtCnn/acc10.jpg" alt="Account 10 Image">
+            <h3>Top #10</h3>
+            <p>Price: <span class="price">Rs.2500.00</span></p>
+            <p>Level 54</p>
+            <p class="status" style="color: rgb(37, 155, 56);">Status: Working</p> <!-- Red color added inline -->
+            <p class="status" style="color: rgb(212, 86, 3);">Low Budget</p> <!-- Red color added inline -->
+        </div>
+    </div>
+    
+    <!-- Footer -->
+    <div class="footer">
+        &copy; 2024 FF Accounts. Partial rights reserved.
+    </div>
+
+    <script>
+        document.getElementById('searchBar').addEventListener('input', function() {
+            var searchValue = parseInt(this.value, 10);
+            var cards = document.querySelectorAll('.card');
+
+            cards.forEach(function(card) {
+                var cardPrice = parseInt(card.getAttribute('data-price'), 10);
+                if (!isNaN(searchValue)) {
+                    if (Math.abs(cardPrice - searchValue) <= 500) { // Adjust the range as needed
+                        card.style.display = 'block';
+                    } else {
+                        card.style.display = 'none';
+                    }
+                } else {
+                    card.style.display = 'block'; // Show all cards if search input is not a number
+                }
+            });
+        });
+
+        document.querySelectorAll('.card').forEach(function(card) {
+            card.addEventListener('click', function() {
+                var link = card.getAttribute('data-link');
+                if (link) {
+                    window.location.href = link;
+                }
+            });
+        });
+    </script>
+
+</body>
+</html>
